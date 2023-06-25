@@ -1,0 +1,43 @@
+{
+  "name": "sample-cicd-node",
+  "version": "1.0.0",
+  "description": "Sample CICD Node project",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch && nodemon dist",
+    "type-check": "npx tsc",
+    "lint": "npm run type-check && npx tsc-strict && ./node_modules/.bin/eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "tsc && jest",
+    "test:ci": "tsc && jest --ci --reporters=default --reporters=jest-junit",
+    "start": "npm run build && node ./dist/src/index.js",
+    "watch": "npm run build && nodemon ./dist/src/index.js"
+  },
+  "author": "Christophe Heral",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-standard-with-typescript": "^35.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.2",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.5.0",
+    "jest-junit": "^16.0.0",
+    "jest-mock-req-res": "^1.0.2",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.1.3",
+    "typescript-strict-plugin": "^2.1.0"
+  }
+}
