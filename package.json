@@ -34,7 +34,7 @@
     "jest-junit": "^16.0.0",
     "jest-mock-req-res": "^1.0.2",
     "ts-jest": "^29.2.6",
-    "typescript": "^5.7.3",
+    "typescript": "^5.8.2",
     "typescript-strict-plugin": "^2.4.4"
   },
   "volta": {
