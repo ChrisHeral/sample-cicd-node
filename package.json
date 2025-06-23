@@ -30,7 +30,7 @@
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jest": "^29.0.1",
-    "jest": "^30.0.0",
+    "jest": "^30.0.2",
     "jest-junit": "^16.0.0",
     "jest-mock-req-res": "^1.0.2",
     "ts-jest": "^29.4.0",
